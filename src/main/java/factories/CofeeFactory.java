@@ -9,8 +9,8 @@ public class CofeeFactory implements AbstractFactory<Cofee>{
     public Cofee create(Enum kind) {
         Cofee result = null;
         switch ((Coffees) kind) {
-            case ARABIC:  result = new ArabicCofee();
-            case RABUSTA: result = new RabustaCofee();
+            case ARABIC:  result = new ArabicCofee(); break;
+            case RABUSTA: result = new RabustaCofee(); break;
         }
         return result;
     }
